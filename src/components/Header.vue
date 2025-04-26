@@ -7,10 +7,13 @@
 			{{ JOB_ROLE }}
 		</h3>
 		<p class="mt-4 max-w-xs text-slate-400">{{ ROLE_OVERVIEW }}</p>
+		<nav-bar />
 	</header>
 </template>
 
 <script setup>
+import NavBar from '@/components/navbar/Index.vue';
+
 import {
 	FULL_NAME,
 	JOB_ROLE,
