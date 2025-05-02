@@ -10,12 +10,14 @@
 			@click="onClick(menu)"
 		>
 			<span
-				class="mr-4 h-px transition-all motion-reduce:transition-none"
-				:class="getDynamicClass(menu)"
+				class="mr-4 h-px w-8 bg-slate-600 transition-all motion-reduce:transition-none"
+				:class="[
+					{ '!w-16 !bg-slate-200': isActiveMenu(menu) }
+				]"
 			/>
 			<span
 				class="nav-text text-xs font-bold uppercase tracking-widest"
-				:class="[{ 'text-slate-200': isActiveMenu(menu) }]"
+				:class="[{ '!text-slate-200': isActiveMenu(menu) }]"
 			>
 				{{ menu.title }}
 			</span>
@@ -63,9 +65,5 @@ const isHoveredMenu = (menu) => {
 
 const isActiveMenu = (menu) => {
 	return menu.key === activeMenu?.value?.key || isHoveredMenu(menu)
-}
-
-const getDynamicClass = (menu) => {
-	return isActiveMenu(menu) ? 'w-16 bg-slate-200' : 'w-8 bg-slate-600';
 }
 </script>
