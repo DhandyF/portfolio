@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import About from '@/components/sections/About.vue'
+import About from '@/views/sections/About.vue'
 
 </script>
