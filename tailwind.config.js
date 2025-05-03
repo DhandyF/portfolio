@@ -11,4 +11,10 @@ export default {
     extend: {},
   },
   plugins: [],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
 }
