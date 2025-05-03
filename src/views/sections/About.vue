@@ -1,12 +1,15 @@
 <template>
-<div id="about" class="mb-16 md:mb-24 lg:mb-36 text-slate-500">
+<section
+	id="about"
+	class="mb-16 md:mb-24 lg:mb-36"
+>
 	<div class="mb-4 py-4 lg:sr-only">
 		<h2 class="text-sm text-bold text-slate-200">ABOUT</h2>
 	</div>
-	<p>
+	<p class="text-slate-500">
 		{{ ABOUT }}
 	</p>
-</div>
+</section>
 </template>
 
 <script setup>
