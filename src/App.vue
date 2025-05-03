@@ -4,9 +4,9 @@ import { RouterView } from 'vue-router'
 
 <template>
 <div id="app">
-  <main class="bg-slate-900">
-    <router-view></router-view>
-  </main>
+	<main class="bg-slate-900">
+		<router-view></router-view>
+	</main>
 </div>
 </template>
 
