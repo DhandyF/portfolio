@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const menus = [
 	{
@@ -49,6 +49,7 @@ const activeMenu = ref(null)
 
 const onClick = (menu) => {
 	activeMenu.value = menu
+	document.getElementById(menu.key).scrollIntoView({ behavior: 'smooth' })
 }
 
 const onFocus = (menu) => {
@@ -66,4 +67,30 @@ const isHoveredMenu = (menu) => {
 const isActiveMenu = (menu) => {
 	return menu.key === activeMenu?.value?.key || isHoveredMenu(menu)
 }
+
+
+onMounted(() => {
+	const option = {
+		root: null,
+		rootMargin: '0px',
+		threshold: 0.6
+	}
+
+	const callback = (entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				activeMenu.value = {
+					key: entry.target.id
+				}
+			}
+		})
+	}
+
+	const observer = new IntersectionObserver(callback, option)
+
+	document.querySelectorAll('section[id]').forEach(section => {
+		observer.observe(section)
+	})
+})
+
 </script>
