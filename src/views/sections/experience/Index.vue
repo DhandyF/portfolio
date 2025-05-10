@@ -10,7 +10,7 @@
 		<li
 			v-for="experience in EXPERIENCES"
 			:key="experience.id"
-			class="mb-12 cursor-pointer p-3 rounded-lg group hover:bg-white/10"
+			class="mb-12 cursor-pointer lg:p-3 rounded-lg group hover:bg-white/10"
 		>
 			<div class="grid sm:grid-cols-8 sm:gap-8 md:gap-4">
 				<div class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
@@ -22,7 +22,7 @@
 							<span>{{ experience.position }} · {{ experience.company }}</span>
 						</a>
 					</h3>
-					<p class="text-slate-500 text-sm leading-[1.5] mb-2">
+					<p class="text-slate-400 text-sm leading-[1.5] mb-2">
 						{{ experience.job_desc }}
 					</p>
 					<ul class="flex flex-wrap">

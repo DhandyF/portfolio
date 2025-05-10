@@ -6,7 +6,7 @@
 	<div class="mb-4 py-4 lg:sr-only">
 		<h2 class="text-sm text-bold text-slate-200">ABOUT</h2>
 	</div>
-	<p class="text-slate-500">
+	<p class="text-slate-400">
 		{{ ABOUT }}
 	</p>
 </section>
