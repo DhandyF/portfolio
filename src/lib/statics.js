@@ -1,7 +1,13 @@
 export const FULL_NAME = 'Moch Dhandy Friyadi';
 export const JOB_ROLE = 'Full Stack Engineer';
-export const ROLE_OVERVIEW = 'I build robust and dynamic website application.';
-export const ABOUT = 'Passionate Fullstack Developer with over 2 years of experience building end-to-end web applications, and over 2 years of dedicated Frontend development expertise. Proficient in PHP (Laravel), Vue.js, RESTful API integration, creating responsive, and user-friendly interfaces. Adept at working in Agile environments, collaborating with cross-functional teams, and delivering clean, maintainable code. Committed to continuous learning and adopting new technologies.';
+export const ROLE_OVERVIEW = 'I build user friendly and dynamic website application.';
+export const ABOUT = {
+	paragraph: [
+		"I'm a full-stack developer passionate about building end-to-end web applications that are not only functional but delightful to use. I focus on crafting user-friendly, responsive interfaces that deliver a seamless experience across both web and mobile platforms. On the backend, I build secure, scalable APIs that ensure accurate and efficient data delivery. What excites me most isn’t just making an application look great — it's optimizing its performance to ensure it runs smoothly and reliably under real-world conditions.",
+		"Currently, I'm a Fullstack Developer at OrderOnline. In the past, I have had the opportunity to develop software in variety company — from Banking to start-up company."
+	]
+};
+
 export const EXPERIENCES = [
 	{
 		id: 'exp-1',
