@@ -38,10 +38,10 @@ const menus = [
 		key: 'experience',
 		title: 'Experience',
 	},
-	{
-		key: 'project',
-		title: 'Project',
-	},
+	// {
+	// 	key: 'project',
+	// 	title: 'Project',
+	// },
 ];
 
 const focusedMenu = ref(null)
