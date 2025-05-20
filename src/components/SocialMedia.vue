@@ -22,25 +22,3 @@
 	</li>
 </ul>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-import { SOCIAL_MEDIAS } from '@/lib/statics'
-
-defineProps({
-	href: {
-		type: String,
-		required: true,
-	},
-	title: {
-		type: String,
-		required: true,
-	},
-	src: {
-		type: String,
-		required: true,
-	},
-})
-
-const socialMedias = ref(SOCIAL_MEDIAS);
-</script>
