@@ -10,7 +10,29 @@ export const ABOUT = {
 
 export const EXPERIENCES = [
 	{
-		id: 'exp-1',
+		id: 'exp-6',
+		period: 'Oct 2025 - Present',
+		position: 'Full Stack Developer',
+		company: 'SalesPond',
+		url: 'https://salespond.com/',
+		job_desc: 'Develop and maintain internal website application. Implement a responsive user interface for a web and mobile device, ensuring a seamless user experience across different devices. Collaborated with product owner, backend developer, and designer to defined technical specifications, proper design, and ensured alignment with business objectives.',
+		tech_stack: [
+			'JavaScript',
+			'Vue',
+			'PHP',
+			'Laravel',
+			'Restful API',
+			'Git',
+			'Bootstrap 4',
+			'Tailwind',
+			'KendoUI',
+			'HTML',
+			'CSS',
+			'SCSS',
+		],
+	},
+	{
+		id: 'exp-5',
 		period: 'Jun 2023 - Present',
 		position: 'Full Stack Developer',
 		company: 'PT Ordivo Teknologi Indonesia',
@@ -33,7 +55,7 @@ export const EXPERIENCES = [
 		],
 	},
 	{
-		id: 'exp-2',
+		id: 'exp-4',
 		period: 'Mar - Oct 2023',
 		position: 'Frontend Developer',
 		company: 'PT Sapta Muda Berkarya',
@@ -66,7 +88,7 @@ export const EXPERIENCES = [
 		],
 	},
 	{
-		id: 'exp-4',
+		id: 'exp-2',
 		period: 'Nov 2019 - May 2020',
 		position: 'Frontend Developer',
 		company: 'PT. Dtech Solusi Bisnis',
@@ -82,7 +104,7 @@ export const EXPERIENCES = [
 		],
 	},
 	{
-		id: 'exp-5',
+		id: 'exp-1',
 		period: 'Jul - Nov 2019',
 		position: 'Full Stack Developer',
 		company: 'PT Kong Teknologi Asia',
