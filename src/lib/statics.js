@@ -33,7 +33,7 @@ export const EXPERIENCES = [
 	},
 	{
 		id: 'exp-5',
-		period: 'Jun 2023 - Present',
+		period: 'Jun 2023 - Jul 2025',
 		position: 'Full Stack Developer',
 		company: 'PT Ordivo Teknologi Indonesia',
 		url: 'https://orderonline.id/',
